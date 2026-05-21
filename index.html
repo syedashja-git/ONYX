@@ -4,15 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ONYX Chemicals – Construction Chemical Experts</title>
-
-  <!-- Favicon: replace with actual logo file path -->
-  <link rel="icon" type="image/png" href="Logo.png" />
-
-  <!-- Google Fonts -->
+  <link rel="icon" type="image/png" href="Assets/Service/Logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -29,23 +24,23 @@
         <div class="hex h6"></div>
       </div>
       <p class="loader-brand">ONYX</p>
-      <p class="loader-sub">Loading Experience…</p>
+      <p class="loader-sub">PREPARING INDUSTRIAL SOLUTIONS</p>
     </div>
   </div>
 
   <!-- ░░ NAVBAR ░░ -->
   <header id="navbar">
     <div class="nav-container">
-      <!-- LOGO SPACE — replace src with your logo file -->
       <a href="#home" class="nav-logo">
-        <img src="Logo.png" alt="ONYX Logo" id="nav-logo-img"/>
+        <img src="Assets/Service/Logo.png" alt="ONYX Logo" id="nav-logo-img"/>
       </a>
 
       <nav class="nav-links" id="nav-links">
-        <a href="#home"    class="nav-link active">Home</a>
+        <a href="#home"     class="nav-link active">Home</a>
+        <a href="#products" class="nav-link">Products</a>
         <a href="#services" class="nav-link">Services</a>
-        <a href="#about"   class="nav-link">About</a>
-        <a href="#contact" class="nav-link nav-cta"><strong>Contact Us</strong></a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#contact"  class="nav-link nav-cta"><strong>Contact Us</strong></a>
       </nav>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -91,6 +86,139 @@
     </div>
   </section>
 
+  <!-- ░░ PRODUCTS ░░ -->
+  <section id="products" class="products-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">What We Supply?</span>
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-sub">
+          Industry-grade chemical solutions across four core categories — built for Pakistan's toughest construction challenges.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Card 1: Construction Chemicals -->
+        <div class="prod-card reveal" data-category="construction">
+          <div class="prod-img-wrap">
+            <!-- Replace src with your image -->
+            <img src="Assets/Products/Construction Chemicals/Construction Chemicals.png" alt="Construction Chemicals" class="prod-img"/>
+            <div class="prod-img-overlay"></div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="22" width="10" height="14" fill="currentColor" opacity=".7"/>
+                <rect x="16" y="14" width="10" height="22" fill="currentColor"/>
+                <rect x="28" y="18" width="8" height="18" fill="currentColor" opacity=".6"/>
+                <polyline points="2,22 9,12 21,14 31,18 38,15" stroke="currentColor" stroke-width="2" fill="none" opacity=".6"/>
+              </svg>
+            </div>
+            <h3>Construction Chemicals</h3>
+            <p>Admixtures, sealants, protective coatings and more — comprehensive chemical solutions for every construction phase.</p>
+            <button class="prod-explore-btn" onclick="openProductPage('construction')">
+              See All Products<span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Civil Work -->
+        <div class="prod-card reveal" data-category="civil">
+          <div class="prod-img-wrap">
+            <!-- Replace src with your image -->
+            <img src="Assets/Products/Civil Work/Civil Work.png" alt="Civil Work" class="prod-img"/>
+            <div class="prod-img-overlay"></div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 35 L5 15 L20 5 L35 15 L35 35 Z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity=".15"/>
+                <rect x="14" y="22" width="12" height="13" fill="currentColor" opacity=".8"/>
+                <rect x="8" y="18" width="8" height="6" fill="currentColor" opacity=".5"/>
+                <rect x="24" y="18" width="8" height="6" fill="currentColor" opacity=".5"/>
+              </svg>
+            </div>
+            <h3>Civil Work</h3>
+            <p>Specialised grouts, repair compounds and termite control products — engineered for structural integrity and longevity.</p>
+            <button class="prod-explore-btn" onclick="openProductPage('civil')">
+              See All Products <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Waterproofing -->
+        <div class="prod-card reveal featured-prod" data-category="waterproofing">
+          <div class="prod-img-wrap">
+            <!-- Replace src with your image -->
+            <img src="Assets/Products/Waterproofing/Waterproofing.png" alt="Waterproofing" class="prod-img"/>
+            <div class="prod-img-overlay"></div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4 C20 4, 6 20, 6 28 A14 14 0 0 0 34 28 C34 20 20 4 20 4Z" fill="currentColor" opacity=".8"/>
+                <path d="M20 14 C20 14, 11 24, 11 29 A9 9 0 0 0 29 29 C29 24 20 14 20 14Z" fill="white" opacity=".2"/>
+              </svg>
+            </div>
+            <h3>Waterproofing</h3>
+            <p>Advanced waterproofing systems and protective coatings that create an impenetrable barrier against moisture.</p>
+            <button class="prod-explore-btn" onclick="openProductPage('waterproofing')">
+             See All Products <span class="btn-arrow">→</span>
+            </button>
+          </div>
+          <div class="prod-popular-badge">Most Popular</div>
+        </div>
+
+        <!-- Card 4: Epoxy -->
+        <div class="prod-card reveal" data-category="epoxy">
+          <div class="prod-img-wrap">
+            <!-- Replace src with your image -->
+            <img src="Assets/Products/Epoxy/Epoxy.png" alt="Epoxy" class="prod-img"/>
+            <div class="prod-img-overlay"></div>
+          </div>
+          <div class="prod-body">
+            <div class="prod-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="20,4 36,13 36,31 20,36 4,31 4,13" fill="currentColor" opacity=".12"/>
+                <polygon points="20,9 30,15 30,29 20,33 10,29 10,15" fill="currentColor" opacity=".3"/>
+                <polygon points="20,14 26,17 26,27 20,30 14,27 14,17" fill="currentColor" opacity=".7"/>
+                <circle cx="20" cy="22" r="5" fill="white" opacity=".35"/>
+              </svg>
+            </div>
+            <h3>Epoxy</h3>
+            <p>High-performance epoxy paints, flooring systems and protective coatings offering superior chemical resistance.</p>
+            <button class="prod-explore-btn" onclick="openProductPage('epoxy')">
+              See All Products <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PRODUCT SUB-PAGE OVERLAY ░░ -->
+  <div id="productPage" class="product-page-overlay">
+    <div class="pp-header">
+      <div class="pp-header-inner">
+        <button class="pp-back-btn" onclick="closeProductPage()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15,18 9,12 15,6"/></svg>
+          Back to Products
+        </button>
+        <div class="pp-title-wrap">
+          <span class="pp-category-tag" id="ppCategoryTag"></span>
+          <h2 class="pp-title" id="ppTitle"></h2>
+        </div>
+      </div>
+    </div>
+    <div class="pp-body">
+      <div class="pp-cards-grid" id="ppCardsGrid">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </div>
+
   <!-- ░░ SERVICES ░░ -->
   <section id="services" class="services">
     <div class="section-container">
@@ -104,17 +232,9 @@
 
       <div class="services-grid">
 
-        <!-- Card 1: Civil Work -->
         <div class="srv-card" data-index="01">
           <div class="srv-img-wrap">
-            <!--
-              ════════════════════════════════════════════════════════
-              📌 IMAGE PLACEHOLDER — CIVIL WORK
-              Replace the div below with:
-              <img src="your-civil-work-image.jpg" alt="Civil Work" />
-              ════════════════════════════════════════════════════════
-            -->
-              <img src="Construction.jpg" alt="Civil Work" />
+            <img src="Assets/Service/Construction.jpg" alt="Civil Work" />
             <div class="img-placeholder civil">
               <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="10" y="40" width="20" height="30" fill="currentColor" opacity=".7"/>
@@ -128,31 +248,19 @@
           <div class="srv-body">
             <div class="srv-num">01</div>
             <h3>Civil Work</h3>
-            <p>
-              Structural repair compounds, bonding agents, and grouts that restore
-              and reinforce concrete structures with lasting strength.
-            </p>
+            <p>Structural repair compounds, bonding agents, and grouts that restore and reinforce concrete structures with lasting strength.</p>
             <ul class="srv-list">
               <li>Structural Repair Mortars</li>
               <li>Concrete Bonding Agents</li>
               <li>Non-Shrink Grouts</li>
               <li>Surface Hardeners</li>
             </ul>
-            <!-- <a href="#contact" class="srv-link">Enquire Now →</a> -->
           </div>
         </div>
 
-        <!-- Card 2: Waterproofing -->
         <div class="srv-card featured" data-index="02">
           <div class="srv-img-wrap">
-            <!--
-              ════════════════════════════════════════════════════════
-              📌 IMAGE PLACEHOLDER — WATERPROOFING
-              Replace the div below with:
-              <img src="your-waterproofing-image.jpg" alt="Waterproofing" />
-              ════════════════════════════════════════════════════════
-            -->
-              <img src="Waterproofing.png" alt="Waterproofing" />
+            <img src="Assets/Service/Waterproofing.png" alt="Waterproofing" />
             <div class="img-placeholder water">
               <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M40 10 C40 10, 15 40, 15 55 A25 25 0 0 0 65 55 C65 40 40 10 40 10Z" fill="currentColor" opacity=".8"/>
@@ -164,32 +272,20 @@
           <div class="srv-body">
             <div class="srv-num">02</div>
             <h3>Waterproofing</h3>
-            <p>
-              Advanced waterproofing membranes and coatings that create an impenetrable
-              barrier against moisture, protecting your investment for decades.
-            </p>
+            <p>Advanced waterproofing membranes and coatings that create an impenetrable barrier against moisture, protecting your investment for decades.</p>
             <ul class="srv-list">
               <li>Cementitious Coatings</li>
               <li>Bituminous Membranes</li>
               <li>Crystalline Waterproofing</li>
-              <li>Roof & Basement Solutions</li>
+              <li>Roof &amp; Basement Solutions</li>
             </ul>
-            <!-- <a href="#contact" class="srv-link">Enquire Now →</a> -->
           </div>
           <div class="featured-badge">Most Popular</div>
         </div>
 
-        <!-- Card 3: Epoxy -->
         <div class="srv-card" data-index="03">
           <div class="srv-img-wrap">
-            <!--
-              ════════════════════════════════════════════════════════
-              📌 IMAGE PLACEHOLDER — EPOXY
-              Replace the div below with:
-              <img src="your-epoxy-image.jpg" alt="Epoxy" />
-              ════════════════════════════════════════════════════════
-            -->
-              <img src="Epoxy.jpg" alt="Epoxy" />
+            <img src="Assets/Service/Epoxy.jpg" alt="Epoxy" />
             <div class="img-placeholder epoxy">
               <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="40,8 72,26 72,62 40,72 8,62 8,26" fill="currentColor" opacity=".15"/>
@@ -203,17 +299,13 @@
           <div class="srv-body">
             <div class="srv-num">03</div>
             <h3>Epoxy Solutions</h3>
-            <p>
-              High-performance epoxy flooring and injection systems offering
-              superior chemical resistance, seamless finish, and unmatched durability.
-            </p>
+            <p>High-performance epoxy flooring and injection systems offering superior chemical resistance, seamless finish, and unmatched durability.</p>
             <ul class="srv-list">
               <li>Epoxy Floor Coatings</li>
               <li>Crack Injection Systems</li>
               <li>Anti-Static Floors</li>
               <li>Industrial Floor Hardeners</li>
             </ul>
-            <!-- <a href="#contact" class="srv-link">Enquire Now →</a> -->
           </div>
         </div>
 
@@ -324,7 +416,7 @@
             </div>
             <div>
               <strong>Email</strong>
-              <a href="mailto:info@onyx.com">info@onyxpk.com</a>
+              <a href="mailto:info@onyxpk.com">info@onyxpk.com</a>
             </div>
           </div>
         </div>
@@ -368,6 +460,7 @@
       <p class="footer-copy">© 2026 ONYX Chemicals. All Rights Reserved.</p>
       <div class="footer-links">
         <a href="#home">Home</a>
+        <a href="#products">Products</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
