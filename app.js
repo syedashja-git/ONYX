@@ -229,7 +229,7 @@ const PRODUCT_DATA = {
         title: 'HI-BUILD Epoxy Paint',
         description: 'High-build two-component epoxy coatings for steel structures, water tanks, pipelines and industrial equipment. Provides outstanding corrosion resistance, chemical resistance and long service life.',
         colorClass: 'c3',
-        image: 'Assets/Products/Epoxy/HI-BUILD Epoxy Paint.png'
+        image: 'Assets/Products/Epoxy/Hi Build Epoxy Paint.png'
       },
       {
         title: 'Flooring Solutions',
